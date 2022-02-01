@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(#00d4ff));
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}
+
+.clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px auto 0;
+  width: 400px;
+  height: 400px;
+  background-image: url(./img/clock.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  border-color: #FFA07A;
+  border-width: 20px;
+  border-style: solid;
+}
+
+.clock::before {
+  content: '';
+  position: absolute;
+  background-color: #e5bc61;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-radius: 50%;
+}
+
+.clock .s {
+  width: 0px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.clock .s::before {
+  content: '';
+  width: 46px;
+  height: 181px;
+  border-radius: 50px;
+  background-image: url(./img/sec.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center center;
+  position: absolute;
+}
+
+.clock .m {
+  width: 0px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.clock .m::before {
+  content: '';
+  width: 46px;
+  height: 201px;
+  border-radius: 50px;
+  background-image: url(./img/min.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center center;
+  position: absolute;
+}
+
+.clock .h {
+  width: 0px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(250deg);
+          transform: rotate(250deg);
+}
+
+.clock .h::before {
+  content: '';
+  width: 46px;
+  height: 205px;
+  border-radius: 50px;
+  background-image: url(./img/hours.png);
+  background-repeat: no-repeat;
+  background-size: 44px;
+  background-position: center center;
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
